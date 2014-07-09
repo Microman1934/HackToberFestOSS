@@ -26,6 +26,9 @@ PRODUCT_COPY_FILES := \
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/tilapia/overlay
 
+PRODUCT_RUNTIMES := runtime_libdvm_default
+PRODUCT_RUNTIMES += runtime_libart
+
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/grouper/device-common.mk)
 
